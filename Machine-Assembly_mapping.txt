@@ -1,0 +1,24 @@
+0000 - NOOP
+0100 - ADD -> next 4 bits - registers
+0010 - MOVE -> next 4 bits - registers -> remaining are 0s
+0110 - SUB -> next 4 bits - registers
+1101 - CMP -> next 4 bits - registers
+1100 - SHIFT -> next 2 bits - register -> d 0 - L
+                                          d 1 - R
+1110 - JUMP -> 8 LOW - PC OFFSET( 6 low to be precise!)
+1111 - BRE/Z -> d d 0 0 -> PC OFFSET
+1111 - BRNE/Z -> d d 0 1 -> PC OFFSET
+1111 - BRG -> d d 1 0 -> PC OFFSET
+1111 - BRGE -> d d 1 1 -> PC OFFSET
+0101 - ADDI -> next 2 bits - register -> 8 low - immediate value to be added
+0111 - SUBI ->     ||
+0011 - LOADI -> ||
+0011 - LOADP -> next 2 bits - reg -> 8 low - address
+1000 - LOAD -> next 2 bits - reg -> 8-LOW - Address
+1001 - LOADF -> next 2 bits - reg -> next 2 bits - reg for offset-> 8-LOW - ADDRESS
+1010 - STORE -> next 2 bits - reg -> 8 low - address
+1011 - STOREF -> next 2 bits - reg -> next 2 bits - reg FOR OFFSET -> 8 low - address
+0001 - INPUTC -> d d 0 0 -> 8 low - address
+0001 - INPUTCF -> d d 0 1 -> 8 low - address
+0001 - INPUTD -> d d 1 0 -> 8 low - address
+0001 - INPUTDF -> next 2 bits - reg for offset -> 1 1 ->8 low - address
