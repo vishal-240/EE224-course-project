@@ -9,3 +9,5 @@ It was done in a team of 3. Everything is done in Verilog and a thorough report 
 
 Main problem statement was for a single cycle implementation of the CPU, and we have also done a bonus task of making it multi-cycle implementation!
 The report is kinda lacking for the multi-cycle implementation of the CPU, it was due to the time constraints of the project!
+
+Use the Verilog codes in Quartus Software along with ModelSim for verifying the waveforms of the Bubble Sort from the report!
